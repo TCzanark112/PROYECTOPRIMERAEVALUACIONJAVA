@@ -31,6 +31,12 @@ cada uno cuenta con atributos disferentes que ayudan a pasar algunas de las dife
 - No todo son combates, tambien hay minijuegos que se interponen entre tu y la victoria
 - Para completar la historia deberas vencer varios enemigos y elegir bien que camino recorrer
 
+## Enlace Repositorio
+https://github.com/TCzanark112/PROYECTOPRIMERAEVALUACIONJAVA
+
+## Enlace Repositorio
+
+
 ## Tecnologías utilizadas
 
 Lenguaje: Java.
