@@ -26,18 +26,4 @@ public class Bossvieja {
         return armadura;
     }
 
-    public static String fraseAtaque() {
-
-        String[] frases = {
-                "VIEJA:"+ Colores.rojo()+" ¡BIGOTITOS ES MIO!"+ Colores.reset(),
-                "VIEJA:"+ Colores.rojo()+" ¡ME LAS VAS A PAGAR!"+ Colores.reset(),
-                "VIEJA:" + Colores.rojo()+"¡La vieja se abalanza sobre ti!"+ Colores.reset(),
-                "VIEJA:"+ Colores.rojo()+" ¡QUIEN TE CREES QUE ERES!"+ Colores.reset(),
-                "VIEJA:"+ Colores.rojo()+" ¡No me tomes a broma muchacho!"+ Colores.reset()
-        };
-        Random ramdon=new Random();
-        int aleatorio = ramdon.nextInt(5);
-        return frases[aleatorio];
-    }
-
 }

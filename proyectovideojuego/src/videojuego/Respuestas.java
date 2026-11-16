@@ -68,4 +68,23 @@ public class Respuestas
         int aleatorio=ramdon.nextInt(3);
         return frases[aleatorio];
     }
+    public static String nombredehabilidadesbendecidas(int rolelegido)
+    {
+        String nombredehabilidades = "";
+        if(rolelegido==1)
+        {
+            nombredehabilidades=(Colores.amarillo()+"FLECHA DEL ELEGIDO"+Colores.reset());
+        }
+        if(rolelegido==2)
+        {
+            nombredehabilidades=(Colores.amarillo()+"ESPADAZO DEL DESTINO"+Colores.reset());        }
+        if(rolelegido==3)
+        {
+            nombredehabilidades=(Colores.amarillo()+"LLAMARADA DEL FENIX"+Colores.reset());        }
+        if(rolelegido==4)
+        {
+            nombredehabilidades=(Colores.amarillo()+"ASESINATO DE DEMONIOS"+Colores.reset());
+        }
+        return nombredehabilidades;
+    }
 }

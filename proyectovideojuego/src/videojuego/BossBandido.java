@@ -34,18 +34,4 @@ public class BossBandido {
         return 70;
     }
 
-    public static String fraseAtaque() {
-
-        String[] frases = {
-               Colores.morado()+"BOSSBANDIDO: "+ Colores.verde()+"TE VAS A ENTERAR, MINDUNDI!!"+Colores.reset(),
-                Colores.morado()+"BOSSBANDIDO: "+  Colores.verde()+"VAIS A SUFRIR!!!"+Colores.reset(),
-                Colores.morado()+"BOSSBANDIDO: "+ Colores.verde()+"No soy tan blando como mis secuaces"+Colores.reset(),
-                Colores.morado()+"BOSSBANDIDO: "+ Colores.verde()+"No saldreis con vida de esta"+Colores.reset(),
-                Colores.morado()+"BOSSBANDIDO: "+ Colores.verde()+"Os metisteis con el bandido equivocado!!!"+Colores.reset(),
-        };
-
-        Random ramdon = new Random();
-        int aleatorio=ramdon.nextInt(5);
-        return frases[aleatorio];
-    }
 }

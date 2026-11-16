@@ -33,5 +33,15 @@ public class Colores //meto en esta clase todos los Colores que queramos usar
         String morado ="\u001B[35m";
         return morado;
     }
+    public static String carmesi()
+    {
+        String carmesi ="\u001B[1;38;2;235;45;65m";
+       return carmesi;
+    }
+    public static String blanco()
+    {
+        String blanco ="\u001B[1;38;2;240;248;255m";
+        return blanco;
+    }
 
 }

@@ -45,5 +45,25 @@ public class Error
         }
         return numero;
     }
+    public static int validacionnumero(Scanner sc, int min, int max) {
+        boolean falso = false;
+        int numero = 0;
 
+        while (!falso) {
+            try {
+                numero = sc.nextInt();
+                if (numero >= min && numero <= max) {
+                    falso = true;
+                } else {
+                    Error.fallosnumeros();
+                    Funcionparaquelaletrasalgadeunoenuno.imprimirlento("Elige un numero entre el " + min + " y el " + max);
+                }
+            } catch (InputMismatchException e) {
+                sc.next();
+                Error.fallosnumeros();
+                Funcionparaquelaletrasalgadeunoenuno.imprimirlento("Introduce un número válido entre " + min + " y " + max);
+            }
+        }
+        return numero;
+    }
 }

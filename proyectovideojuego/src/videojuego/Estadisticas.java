@@ -134,4 +134,93 @@ public class Estadisticas
        int instintoasesion=critico*daniocritico;
        return instintoasesion;
     }
+
+    public static int vidabendecido(int rolelegido) //este metodo es para darle una vida dependiendo del rol que haya elegido
+    {
+        int vida=0;
+        if(rolelegido==1)
+        {
+            vida = 650;
+        } else if (rolelegido==2) {
+            vida=1000;
+
+        } else if (rolelegido==3) {
+            vida=530;
+        } else if (rolelegido == 4) {
+            vida=700;
+        }
+        return vida;
+    }
+    public static int armadurabendecida(int rolelegido) //este metodo es para darle una armadura dependiendo del rol que ha elegido
+    {
+        int armadura=0;
+        if(rolelegido==1) {
+            armadura = 200;
+        } else if (rolelegido == 2) {
+            armadura=400;
+        } else if (rolelegido==3) {
+            armadura=100;
+        } else if (rolelegido==4) {
+            armadura=100;
+        }
+        return armadura;
+    }
+    public static int daniobasebendecido(int rolelegido) //este metodo es para darle un daño dependiendo del rol que haya elegido
+    {
+        int daniobase=0;
+        if(rolelegido==1)
+        {
+            daniobase=750;
+        } else if (rolelegido == 2) {
+            daniobase=400;
+        } else if (rolelegido == 3) {
+            daniobase=1200;
+        } else if (rolelegido == 4) {
+            daniobase=1000;
+        }
+        return daniobase;
+    }
+
+    public static void estadisticaBendecida(int vida,int daniobase,int armadura)//esto es una sobrecarga que no quiero que tenga scanner
+    {
+        System.out.println("tus Estadisticas actuales son:");
+        System.out.println(Colores.verde() + "VIDA: " + Colores.reset() + vida);
+        System.out.println(Colores.verde()+"ATQUE: "+ Colores.reset()+daniobase);
+        System.out.println(Colores.verde()+"ARMADURA: "+ Colores.reset()+armadura);
+    }
+
+
+
+
+
+
+
+    public static int flechadelelegido() //HABILIDAD DEL ARQUERO
+    {
+           int ataqueespecial=1000000;
+         return ataqueespecial;
+    }
+    public static int espadazodelelegido()
+    {
+        int ataqueespecial=0;
+        ataqueespecial=1000;
+        return ataqueespecial;
+    }
+    public static int llamaradadelfenix(int rolelegido)
+    {
+
+        int llamaradadelfenix=2000;
+        return llamaradadelfenix;
+    }
+    public static int asesinatodemales(int rolelegido)
+    {
+        int critico=2;
+        int daniocritico= Estadisticas.daniobasebendecido(rolelegido);
+        int instintoasesion=critico*daniocritico;
+        return instintoasesion;
+    }
+
+
+
+
 }
